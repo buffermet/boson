@@ -1,2 +1,3 @@
-# boson
-Super simple (line-line) file encrypter/decrypter
+# :warning: Warning
+This tool creates encrypted archives of at least **twice** the original size.
+This tool might not make much sense and you're probably better off using an archive utility that supports AES encryption.
