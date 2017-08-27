@@ -1,3 +1,5 @@
-require 'active_support'
+require 'securerandom'
 
-puts SecureRandom.random_bytes(64)
+puts ""
+p SecureRandom.random_bytes(64)
+puts ""
