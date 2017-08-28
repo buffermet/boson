@@ -1,7 +1,4 @@
 require 'colorize'
-require 'openssl'
-require 'base64'
-require 'securerandom'
 require 'active_support/key_generator'
 require 'active_support/message_encryptor'
 require 'active_support/message_verifier'
