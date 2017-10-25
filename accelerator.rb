@@ -3,7 +3,7 @@ require 'active_support/key_generator'
 require 'active_support/message_encryptor'
 require 'active_support/message_verifier'
 
-CWDIR = File.dirname(File.expand_path(__FILE__))
+CWDIR = File.dirname( File.expand_path(__FILE__) )
 
 puts "Get lost or found?".yellow + " lost" + "/".yellow + "found"
 @answer = gets.chomp
@@ -71,7 +71,7 @@ readable_duration = "#{duration/86400} days" if duration > 86400
 readable_duration = "#{duration/604800} weeks" if duration > 604800
 readable_duration = "time to get a new computer" if duration > 1209600
 
-transfer_speed =  "#{( File.size( "#{CWDIR}/#{@file}" ) / 1000 )/duration} KB/s"
+transfer_speed =  "#{( File.size("#{CWDIR}/#{@file}") / 1000 )/duration} KB/s"
 
 puts "Done. Time to wake up.".yellow + " (#{readable_duration} - #{transfer_speed})" if @answer == "lost"
 puts "Done. Time to go to bed.".yellow + " (#{readable_duration} - #{transfer_speed})" if @answer == "found"
