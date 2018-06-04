@@ -68,8 +68,7 @@ readable_duration = "#{duration} seconds" if duration < 60
 readable_duration = "#{duration/60} minutes" if duration > 60
 readable_duration = "#{duration/3600} hours" if duration > 3600
 readable_duration = "#{duration/86400} days" if duration > 86400
-readable_duration = "#{duration/604800} weeks" if duration > 604800
-readable_duration = "time to get a new computer" if duration > 1209600
+readable_duration = "time to get a new computer" if duration > 604800
 
 transfer_speed =  "#{( File.size("#{CWDIR}/#{@file}") / 1000 )/duration} KB/s"
 
